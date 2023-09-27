@@ -6,6 +6,61 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>logiciel git</h1>
+    <img src="./marvel.png alt=" width="200">
+    <h1>reservation hotel</h1>
+    <h2>* champs obligatoires</h2>
+    <form method="get">
+        <label for="nom">votre nom *<br>
+            <input type="text" name="nom" placeholder="nom" id="nom" required>
+        </label><br>
+        <label for="prenom">votre prenom *<br>
+            <input type="text" name="prenom" placeholder="prenom" id="prenom" required>
+        </label><br>
+        <label for="tel">votre tel *<br>
+            <input type="tel" name="tel" placeholder="tel" id="tel" required>
+        </label><br>
+        <label for="mail">votre mail *<br>
+            <input type="mail" name="mail" placeholder="mail" id="mail" required>
+        </label><br>
+
+        <select name="ville" id="ville">
+            <option value="lille">lille</option>
+            <option value="paris">paris</option>
+            <option value="strasbourg">strasbourg</option>
+            <option value="reims">reims</option>
+            <option value="marseille">marseille</option>
+        </select>
+        
+        <label for="date">date<br>
+            <input type="date" name="date" placeholder="date" id="date">
+        </label><br>
+        <label for="nbPersonne">nbPersonne<br>
+            <input type="number" name="nbPersonne" placeholder="nbPersonne" id="nbPersonne" min="1">
+        </label><br>
+
+        <p>Vos options</p>
+        <label for="clim">
+            <input type="checkbox" name="clim" value="clim" id="clim">clim
+        </label>
+        <label for="minibar">
+            <input type="checkbox" name="minibar" value="minibar" id="minibar">minibar
+        </label>
+        <label for="jacuzzi">
+            <input type="checkbox" name="jacuzzi" value="jacuzzi" id="jacuzzi">jacuzzi
+        </label>
+        
+        <textarea name="com" id="com" cols="30" rows="10" placeholder="commentaire"></textarea>
+        
+        <p>Acceptation CGV</p>
+        <label for="oui">
+            <input type="checkbox" name="cgv" value="oui" id="oui" required>oui
+        </label>
+        <label for="non">
+            <input type="checkbox" name="cgv" value="non" id="non" checked>non
+        </label>
+
+        <button type="submit" name="submit">Envoyer ma demande</button>
+    </form>
 </body>
 </html>
